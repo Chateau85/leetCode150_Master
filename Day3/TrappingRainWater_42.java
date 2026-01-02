@@ -32,7 +32,7 @@ class Solution {
                 if (height[left] >= leftMax) {
                     leftMax = height[left]; // 벽 높이 갱신
                 } else {
-                    water += leftMax = height[left]; // 물 채우기
+                    water += leftMax - height[left]; // 물 채우기
                 }
                 left++;
             } else { // 오른쪽 벽이 더 낮거나 같음 -> 오른쪽 처리

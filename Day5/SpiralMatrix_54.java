@@ -55,7 +55,7 @@ class Solution {
 
             // 4. 아래 -> 위(단, 열이 남아있을 때만)
             if (left <= right) {
-                for (int i = bottom; i>= top; i--) {
+                for (int i = bottom; i >= top; i--) {
                     result.add(matrix[i][left]);
                 }
                 left++;
